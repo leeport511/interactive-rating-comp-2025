@@ -4,7 +4,7 @@ import { SubmitButton } from '../components/SubmitButton';
 
 export const MainPage = () => {
 	return (
-		<section className='w-[360px] h-[327px] p-6 bg-radial from-gr-start to-gr-end'>
+		<section className='w-[327px] rounded-[15px] p-6 bg-radial from-gr-start to-gr-end'>
 			<StarIcon />
 			<div className='mb-4'>
 				<h2 className='mb-4 font-bold leading-7 text-2xl text-white'>

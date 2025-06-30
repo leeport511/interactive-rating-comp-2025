@@ -10,7 +10,7 @@ const numbers: Number[] = [
 ];
 export const NumberSelector = () => {
 	return (
-		<div className='flex justify-between'>
+		<div className='flex justify-between mb-6'>
 			{numbers.map(({ number }): ReactNode => {
 				return (
 					<div

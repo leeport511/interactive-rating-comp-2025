@@ -1,10 +1,11 @@
 import { MainPage } from './pages/MainPage';
+import { ThanksPage } from './pages/ThanksPage';
 
 function InteractiveRatingComponentApp() {
 	return (
 		<main className='font-overpass bg-grey950 w-screen h-screen m-auto flex justify-center items-center'>
-			<MainPage />
-			{/* ThanksPage */}
+			{/* <MainPage /> */}
+			<ThanksPage />
 		</main>
 	);
 }
