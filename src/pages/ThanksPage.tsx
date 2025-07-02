@@ -1,12 +1,14 @@
-import React from 'react';
 import { CreditCardImage } from '../components/CreditCardImage';
 import { SelectedPointsMessage } from '../components/SelectedPointsMessage';
+import type { ThanksPageProps } from '../interfaces/interfaces';
 
-export const ThanksPage = () => {
+export const ThanksPage = (props: ThanksPageProps) => {
 	return (
 		<section className='w-[360px] rounded-[15px] px-6 py-8 bg-radial from-gr-start to-gr-end flex flex-col items-center'>
 			<CreditCardImage />
-			<SelectedPointsMessage />
+			<SelectedPointsMessage
+				selectedNumber={props.selectedNumber}
+			/>
 			<div className='text-center'>
 				<h2 className='text-white text-2xl font-bold leading-7 capitalize mb-4'>
 					thank you!

@@ -1,8 +1,13 @@
 import { NumberSelector } from '../components/NumberSelector';
 import { StarIcon } from '../components/StarIcon';
 import { SubmitButton } from '../components/SubmitButton';
+import type { MainPageProps } from '../interfaces/interfaces';
 
-export const MainPage = () => {
+export const MainPage = ({
+	selected,
+	handleSelectedBtn,
+	handleSubmitBtn,
+}: MainPageProps) => {
 	return (
 		<section className='w-[327px] rounded-[15px] p-6 bg-radial from-gr-start to-gr-end'>
 			<StarIcon />
@@ -16,8 +21,13 @@ export const MainPage = () => {
 					improve our offering!
 				</p>
 			</div>
-			<NumberSelector />
-			<SubmitButton />
+			<NumberSelector
+				selected={selected}
+				handleSelectedBtn={handleSelectedBtn}
+			/>
+			<SubmitButton handleSubmitBtn={handleSubmitBtn} />
 		</section>
 	);
 };
+
+// TODO: HAcer logica del submiy para cambiar de pagina

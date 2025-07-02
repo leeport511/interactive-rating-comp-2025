@@ -1,26 +1,28 @@
-import type { ReactNode } from 'react';
-import type { Number } from '../interfaces/interfaces';
+import { type ReactNode } from 'react';
+import type { NumberSelectorProps } from '../interfaces/interfaces';
+import { numbers } from '../constants/constants';
 
-const numbers: Number[] = [
-	{ number: 1 },
-	{ number: 2 },
-	{ number: 3 },
-	{ number: 4 },
-	{ number: 5 },
-];
-export const NumberSelector = () => {
+export const NumberSelector = ({
+	selected,
+	handleSelectedBtn,
+}: NumberSelectorProps) => {
 	return (
 		<div className='flex justify-between mb-6'>
 			{numbers.map(({ number }): ReactNode => {
 				return (
-					<div
+					<button
 						key={number}
-						className='bg-grey900 h-10 w-10 rounded-full'
+						className={`bg-grey900 h-10 w-10 rounded-full cursor-pointer transition-all ease-in ${
+							selected === number
+								? 'bg-orange500 text-black'
+								: 'bg-grey900 text-grey500 hover:text-grey900 hover:bg-white'
+						}`}
+						onClick={() => handleSelectedBtn(number)}
 					>
-						<p className='text-[14px] font-bold text-grey500 text-center leading-[43px]'>
+						<p className='text-[14px] font-bold  text-center leading-[43px]'>
 							{number}
 						</p>
-					</div>
+					</button>
 				);
 			})}
 		</div>
