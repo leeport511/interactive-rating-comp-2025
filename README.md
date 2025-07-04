@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: (https://github.com/leeport511/interactive-rating-comp-2025)
+-   Solution URL: https://github.com/leeport511/interactive-rating-comp-2025
 -   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
