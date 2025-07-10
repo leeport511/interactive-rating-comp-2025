@@ -9,7 +9,7 @@ export const MainPage = ({
 	handleSubmitBtn,
 }: MainPageProps) => {
 	return (
-		<section className='w-[327px] rounded-[15px] p-6 bg-radial from-gr-start to-gr-end'>
+		<section className='w-[327px] md:w-[412px] rounded-[15px] md:rounded-[30px] p-6 md:py-8 bg-radial from-gr-start to-gr-end'>
 			<StarIcon />
 			<div className='mb-4'>
 				<h2 className='mb-4 font-bold leading-7 text-2xl text-white'>

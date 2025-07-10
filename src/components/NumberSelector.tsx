@@ -12,7 +12,7 @@ export const NumberSelector = ({
 				return (
 					<button
 						key={number}
-						className={`bg-grey900 h-10 w-10 rounded-full cursor-pointer transition-all ease-in ${
+						className={`bg-grey900 h-10 w-10 md:h-[51px] md:w-[51px] rounded-full cursor-pointer transition-all ease-in ${
 							selected === number
 								? 'bg-orange500 text-black'
 								: 'bg-grey900 text-grey500 hover:text-grey900 hover:bg-white'
